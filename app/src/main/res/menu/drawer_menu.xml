@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/browse_activity"
+            android:icon="@drawable/ic_activity"
+            android:title="Browse Activities" />
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Your Profile" />
+
+        <item
+            android:id="@+id/post_activity"
+            android:icon="@drawable/ic_post_activity"
+            android:title="Post your Activity" />
+    </group>
+    >
+
+</menu>

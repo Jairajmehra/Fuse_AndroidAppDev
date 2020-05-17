@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Fuse</string>
+    <string name="username_textview">Enter Name</string>
+    <string name="password_textview">Enter password</string>
+    <string name="forgotpassword_textview">Forgot Password?</string>
+    <string name="login_button">Login</string>
+    <string name="registration_textview">Registration</string>
+    <string name="email_register_textview">Enter Email</string>
+    <string name="register_button">Register</string>
+    <string name="member_button">Already Member?</string>
+</resources>

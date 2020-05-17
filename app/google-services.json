@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "224719443781",
+    "firebase_url": "https://fuse-3692e.firebaseio.com",
+    "project_id": "fuse-3692e",
+    "storage_bucket": "fuse-3692e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224719443781:android:4896ceb5a0973a0dd3502c",
+        "android_client_info": {
+          "package_name": "com.example.fuse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224719443781-shfe99qeg688eltbd7lh05sbcsdta0dk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fuse",
+            "certificate_hash": "a39e764ee4387f2403d7afb50eb8355126c315a5"
+          }
+        },
+        {
+          "client_id": "224719443781-mskf8mcoa5kq6gmgsl90a44fshh8tek2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-mIN2wyoDPG-ne67hEal46_tO2iKiANs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224719443781-mskf8mcoa5kq6gmgsl90a44fshh8tek2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
