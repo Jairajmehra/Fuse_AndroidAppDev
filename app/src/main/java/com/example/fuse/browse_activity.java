@@ -17,6 +17,7 @@ public class browse_activity extends AppCompatActivity {
         setContentView(R.layout.activity_browse_activity);
         logout = (Button)findViewById(R.id.logout_button);
 
+        
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
