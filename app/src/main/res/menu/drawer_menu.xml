@@ -17,6 +17,6 @@
             android:icon="@drawable/ic_post_activity"
             android:title="Post your Activity" />
     </group>
-    >
+
 
 </menu>
