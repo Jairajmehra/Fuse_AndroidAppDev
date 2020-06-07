@@ -6,13 +6,16 @@
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true"
-    tools:context=".browse_activity"
-    tools:openDrawer="start">
+    tools:context=".browse_activity">
 
     <include
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         layout="@layout/drawer_toolbar"/>
+    <include
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        layout="@layout/content_browse_activity" />
     <com.google.android.material.navigation.NavigationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,19 +25,8 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"/>
 
-<!--    <Button-->
-<!--        android:id="@+id/logout_button"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="161dp"-->
-<!--        android:layout_marginLeft="161dp"-->
-<!--        android:layout_marginEnd="162dp"-->
-<!--        android:layout_marginRight="162dp"-->
-<!--        android:text="logout"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        tools:layout_editor_absoluteY="608dp" />-->
+
+
 
 
 

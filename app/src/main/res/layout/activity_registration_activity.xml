@@ -12,16 +12,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
         android:layout_marginLeft="55dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="55dp"
         android:layout_marginRight="55dp"
-        android:text="@string/register_button"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textColor="@color/headingtextcolor"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/registration_textview" />
+        android:text="@string/registration_textview" />
 
     <EditText
         android:id="@+id/name_register_textview"
@@ -29,14 +29,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="99dp"
         android:layout_marginLeft="99dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="99dp"
         android:layout_marginRight="99dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Enter Name"
+        android:inputType="textPersonName"
         android:textColor="@color/helptextcolor"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registration_textview" />
 
@@ -46,13 +47,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="99dp"
         android:layout_marginLeft="99dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="99dp"
         android:layout_marginRight="99dp"
-        android:textColor="@color/helptextcolor"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Enter Email"
+        android:inputType="textPersonName"
+        android:textColor="@color/helptextcolor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,17 +65,37 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="99dp"
         android:layout_marginLeft="99dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="99dp"
         android:layout_marginRight="99dp"
         android:ems="10"
-        android:inputType="textPassword|textWebPassword"
         android:hint="Enter Password"
+        android:inputType="textPassword|textWebPassword"
         android:textColor="@color/helptextcolor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_register_textview"
         tools:text="@string/password_textview" />
+
+
+    <EditText
+        android:id="@+id/age_registration_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:ems="10"
+        android:hint="Enter Age"
+        android:inputType="number"
+        android:textColor="@color/helptextcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_register_textview" />
+
 
     <Button
         android:id="@+id/register_button"
@@ -82,14 +103,14 @@
         android:layout_height="55dp"
         android:layout_marginStart="122dp"
         android:layout_marginLeft="122dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="122dp"
         android:layout_marginRight="122dp"
         android:background="@drawable/button"
         android:text="@string/register_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_register_textview" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <Button
         android:id="@+id/member_button"
@@ -97,7 +118,7 @@
         android:layout_height="55dp"
         android:layout_marginStart="122dp"
         android:layout_marginLeft="122dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="122dp"
         android:layout_marginRight="122dp"
         android:background="@drawable/button"
@@ -105,5 +126,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_button" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginRight="155dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age_registration_editText">
+
+        <RadioButton
+            android:id="@+id/radioButton_Male"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="Male"
+            android:checked="true"
+            tools:layout_editor_absoluteX="166dp"
+            tools:layout_editor_absoluteY="515dp" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton_Female"
+            android:layout_width="231dp"
+            android:text="Female"
+            android:layout_height="53dp"
+            tools:layout_editor_absoluteX="171dp"
+            tools:layout_editor_absoluteY="496dp" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

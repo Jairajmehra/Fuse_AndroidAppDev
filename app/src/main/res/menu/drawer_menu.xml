@@ -17,6 +17,9 @@
             android:icon="@drawable/ic_post_activity"
             android:title="Post your Activity" />
     </group>
-
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout" />
 
 </menu>
