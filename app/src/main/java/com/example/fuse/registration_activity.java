@@ -59,7 +59,7 @@ public class registration_activity extends AppCompatActivity {
             public void onClick(View v) {
                 final String name = name_edittext.getText().toString().trim();
 
-                String password = password_edittext.getText().toString().trim();
+                final String password = password_edittext.getText().toString().trim();
                 final String email = email_edittext.getText().toString().trim();
                 final String Age = age_edittext.getText().toString().trim();
                 int selectedId = radiogroup.getCheckedRadioButtonId();

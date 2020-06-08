@@ -5,17 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
-    android:fitsSystemWindows="true"
-    tools:context=".browse_activity">
+    tools:context=".post_activity">
 
-<!--    <include-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_width="match_parent"-->
-<!--        layout="@layout/drawer_toolbar"/>-->
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/drawer_toolbar"/>
     <include
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        layout="@layout/content_browse_activity" />
+        layout="@layout/content_post_activity"
+        />
+
     <com.google.android.material.navigation.NavigationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,12 +25,4 @@
         app:menu="@menu/drawer_menu"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"/>
-
-
-
-
-
-
-
-
 </androidx.drawerlayout.widget.DrawerLayout>

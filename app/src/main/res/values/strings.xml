@@ -10,4 +10,7 @@
     <string name="member_button">Already Member?</string>
     <string name="open">open menu</string>
     <string name="close">close menu</string>
+    <string name="Description_example">Eg. Hi, I am Elon I am looking for someone who is interested in FPV drone racing
+            and wants to practice. I am a beginner. Preferably over the coming weekend any time works for me. </string>
+    <string name="Header_example">Eg. Flying FPV Quad</string>>
 </resources>
