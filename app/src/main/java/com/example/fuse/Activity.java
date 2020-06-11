@@ -1,10 +1,12 @@
 package com.example.fuse;
 
 import android.net.Uri;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 import java.net.URI;
 
-public class Activity {
+public class Activity implements Parcelable {
     private String heading;
     private String userName;
     private String description;
@@ -13,6 +15,29 @@ public class Activity {
     private String userAge;
     private String imageUri;
     private String userGender;
+
+    protected Activity(Parcel in) {
+        heading = in.readString();
+        userName = in.readString();
+        description = in.readString();
+        email = in.readString();
+        date = in.readString();
+        userAge = in.readString();
+        imageUri = in.readString();
+        userGender = in.readString();
+    }
+
+    public static final Creator<Activity> CREATOR = new Creator<Activity>() {
+        @Override
+        public Activity createFromParcel(Parcel in) {
+            return new Activity(in);
+        }
+
+        @Override
+        public Activity[] newArray(int size) {
+            return new Activity[size];
+        }
+    };
 
     public String getHeading() {
         return heading;
@@ -56,5 +81,20 @@ public class Activity {
     }
 
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
 
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(heading);
+        dest.writeString(userName);
+        dest.writeString(description);
+        dest.writeString(email);
+        dest.writeString(date);
+        dest.writeString(userAge);
+        dest.writeString(imageUri);
+        dest.writeString(userGender);
+    }
 }

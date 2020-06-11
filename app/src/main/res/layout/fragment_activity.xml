@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ActivityFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="1111dp">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="46dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="343dp"
+                android:layout_marginRight="343dp"
+                android:backgroundTint="#FFFFFF"
+
+                android:src="@drawable/abc_vector_test"
+                android:tint="@color/buttoncolor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_imageView"
+                android:layout_width="99dp"
+                android:layout_height="94dp"
+
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginEnd="282dp"
+                android:layout_marginRight="282dp"
+                android:src="@drawable/ic_profile"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/backBtn" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="61dp"
+                android:text="Name"
+                app:layout_constraintStart_toEndOf="@+id/profile_imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/genderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:text="Gender"
+                app:layout_constraintStart_toEndOf="@+id/profile_imageView"
+                app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
+
+            <TextView
+                android:id="@+id/ageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:text="Age"
+                app:layout_constraintStart_toEndOf="@+id/profile_imageView"
+                app:layout_constraintTop_toBottomOf="@+id/genderTextView" />
+
+            <TextView
+                android:id="@+id/headingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:autoSizeMaxTextSize="100sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:text="@string/Header_example"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/headingtextcolor"
+                app:layout_constraintBottom_toTopOf="@+id/descriptionTextViewFrag"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/descriptionTextViewFrag"
+                android:layout_width="356dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+
+                android:singleLine="false"
+                android:text="@string/Description_example"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/headingTextView" />
+
+            <TextView
+                android:id="@+id/bioTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="325dp"
+                android:layout_marginRight="325dp"
+                android:text="Bio"
+                android:textColor="@color/headingtextcolor"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@id/descriptionTextViewFrag"
+                app:layout_constraintHorizontal_bias="0.026"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_imageView" />
+
+            <TextView
+                android:id="@+id/bio_text"
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="30dp"
+                android:singleLine="false"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/headingTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bioTextView" />
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="129dp"
+                android:layout_marginLeft="129dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginRight="34dp"
+                android:layout_marginBottom="10dp"
+                android:text="Date"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/descriptionTextViewFrag"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/headingTextView" />
+
+            <ImageButton
+                android:id="@+id/deleteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="176dp"
+
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="176dp"
+                android:layout_marginRight="176dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/trash"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionTextViewFrag" />
+
+            <Button
+                android:id="@+id/connectBtn"
+                android:background="@drawable/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I am Interested\n Connect Me!"
+                android:visibility="invisible"
+                android:singleLine="false"
+                android:padding="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionTextViewFrag" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</FrameLayout>

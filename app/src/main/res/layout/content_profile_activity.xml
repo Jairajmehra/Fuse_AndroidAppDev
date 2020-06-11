@@ -6,21 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<!--    <ImageView-->
-<!--        android:id="@+id/profile_imageView"-->
-<!--        android:layout_width="100dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        android:layout_marginStart="21dp"-->
-<!--        android:layout_marginLeft="21dp"-->
-<!--        android:layout_marginTop="100dp"-->
-<!--        android:layout_marginEnd="290dp"-->
-<!--        android:layout_marginRight="290dp"-->
-<!--        android:adjustViewBounds="true"-->
-<!--        android:scaleType="centerInside"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:srcCompat="@drawable/ic_launcher_foreground" />-->
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_imageView"
@@ -31,7 +16,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginEnd="290dp"
         android:layout_marginRight="290dp"
-        android:src="@mipmap/ic_launcher_round"
+        android:src="@drawable/ic_profile"
         app:civ_border_color="#FF000000"
         app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
